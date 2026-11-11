@@ -288,3 +288,8 @@ Nhiệm vụ KB06 đã hoàn thành phần triển khai môi trường, kiểm t
 Kết quả thực nghiệm cho thấy Suricata có thể phát hiện và ghi nhận các kết nối SSH lặp lại từ máy Attacker đến máy Victim thông qua luật tự xây dựng có SID `1000004`.
 
 Mặc dù Hydra chưa tìm được mật khẩu hợp lệ trong wordlist đã sử dụng, hệ thống vẫn ghi nhận được cảnh báo tương ứng với hành vi kết nối SSH lặp lại. Đây là cơ sở để đánh giá khả năng giám sát và phát hiện của Suricata trong kịch bản KB06.
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`06-ssh-bruteforce`](https://github.com/phanyen206/Suricata/tree/main/scenarios/06-ssh-bruteforce). Các tệp nhị phân như PCAP, ảnh chụp và tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
