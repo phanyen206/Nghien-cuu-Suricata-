@@ -1,11 +1,11 @@
 > **Hướng dẫn người đọc:** README này mô tả mục tiêu, môi trường, thứ tự tái lập và cách kiểm tra kết quả. Hãy đọc phần môi trường và lệnh trước khi chạy script; cập nhật IP/interface theo lab của bạn. Chỉ chạy trong mạng ảo được phép.
 
-# KB09 – TELNET BRUTE FORCE
+# KB07 – TELNET BRUTE FORCE
 
 ## 1. Thông tin nhiệm vụ
 
 - **Người phụ trách:** Uyên
-- **Tên kịch bản:** KB09 – Telnet Brute Force
+- **Tên kịch bản:** KB07 – Telnet Brute Force
 - **Nhóm tấn công:** Mật khẩu (Password)
 - **MITRE ATT&CK:** T1110.001 – Password Guessing
 - **Công cụ kiểm thử:** THC Hydra, Expect, Telnet
@@ -14,7 +14,7 @@
 
 ## 2. Mục tiêu thực hiện
 
-Nhiệm vụ KB09 nhằm mô phỏng hành vi tấn công vét cạn mật khẩu thông qua giao thức Telnet trên máy Victim, từ đó đánh giá khả năng phát hiện của hệ thống Suricata.
+Nhiệm vụ KB07 nhằm mô phỏng hành vi tấn công vét cạn mật khẩu thông qua giao thức Telnet trên máy Victim, từ đó đánh giá khả năng phát hiện của hệ thống Suricata.
 
 Các mục tiêu cụ thể:
 
@@ -453,7 +453,7 @@ Kết quả chỉ phản ánh một lần đăng nhập hợp lệ được ki�
 
 ## 6. Kết luận
 
-Nhiệm vụ KB09 đã hoàn thành các bước triển khai môi trường Telnet, mô phỏng hành vi đăng nhập sai nhiều lần và xây dựng luật phát hiện trên Suricata.
+Nhiệm vụ KB07 đã hoàn thành các bước triển khai môi trường Telnet, mô phỏng hành vi đăng nhập sai nhiều lần và xây dựng luật phát hiện trên Suricata.
 
 Kết quả thực nghiệm cho thấy bộ luật ET Open đã phát hiện hành vi đăng nhập Telnet thất bại thông qua SID `2101251` – `GPL TELNET Bad Login`.
 
@@ -463,7 +463,7 @@ Khi kiểm tra bằng một phiên đăng nhập hợp lệ, luật tự xây d�
 
 Tuy nhiên, độ trễ phát hiện chưa thể xác định chính xác do timestamp giữa PCAP và EVE chưa khớp. Đây là hạn chế cần được kiểm tra bổ sung nếu yêu cầu đánh giá latency chính thức.
 
-Như vậy, KB09 đã hoàn thành phần triển khai và kiểm thử phát hiện cơ bản trong môi trường lab, đồng thời đã lưu trữ PCAP, log và luật tự xây dựng để phục vụ việc kiểm tra, đánh giá và báo cáo.
+Như vậy, KB07 đã hoàn thành phần triển khai và kiểm thử phát hiện cơ bản trong môi trường lab, đồng thời đã lưu trữ PCAP, log và luật tự xây dựng để phục vụ việc kiểm tra, đánh giá và báo cáo.
 
 
 ## Tệp nguồn và minh chứng gốc
