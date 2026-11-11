@@ -503,3 +503,8 @@ Trong Run 2, luật tự xây dựng SID `1000014` đã phát hiện được c�
 Độ trễ phát hiện ước tính trong lượt thử nghiệm là khoảng 0,102 giây. Khi kiểm tra bằng 10 request đăng nhập hợp lệ, luật tự xây dựng không phát sinh thêm cảnh báo.
 
 Như vậy, KB08 đã hoàn thành phần triển khai và kiểm thử kỹ thuật trong môi trường lab. Ngưỡng threshold cuối cùng vẫn cần được thống nhất với nhóm trước khi chốt cấu hình chính thức.
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`08-http-basic-auth-bruteforce`](https://github.com/phanyen206/Suricata/tree/main/scenarios/08-http-basic-auth-bruteforce). Các tệp nhị phân như PCAP, ảnh chụp, gói minh chứng hoặc tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
