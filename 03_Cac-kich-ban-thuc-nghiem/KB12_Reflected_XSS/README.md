@@ -97,7 +97,7 @@ sudo suricata -T -c /etc/suricata/suricata.yaml
 Tài liệu `Kịch bản 14.docx` đưa ra luật mẫu:
 
 ```suricata
-alert http any any -> any any (msg:"KB14 Reflected XSS Attack Detected"; content:"q="; content:"<script>"; sid:1000016; rev:1;)
+alert http any any -> any any (msg:"KB12 Reflected XSS Attack Detected"; content:"q="; content:"<script>"; sid:1000016; rev:1;)
 ```
 
 Tuy nhiên, **luật thực tế đã chạy trong VM** được thể hiện trong ảnh và sử dụng `http.uri.raw` với chuỗi URL-encoded `%3Cscript%3E`, nội dung tương đương:
