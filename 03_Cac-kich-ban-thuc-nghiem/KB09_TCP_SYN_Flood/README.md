@@ -102,7 +102,7 @@ Mẫu thực nghiệm ghi được **100 gói SYN**, nguồn `192.168.100.10`, �
 
 ```bash
 mkdir -p ~/kb11-http-lab
-printf 'KB11 test\n' > ~/kb11-http-lab/index.html
+printf 'KB09 test\n' > ~/kb11-http-lab/index.html
 cd ~/kb11-http-lab
 sudo python3 -m http.server 80 --bind 192.168.100.20
 ```
