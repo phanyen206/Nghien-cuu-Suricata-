@@ -371,3 +371,8 @@ Nhận xét:
 | `benign-eve-excerpt-run2.json` | Run 2 trên lưu lượng bình thường, đã lọc checksum (223 dòng, đều là SID 2034636) |
 | `summary-run1.txt`, `summary-run2.txt` | Bảng tóm tắt cảnh báo |
 | `screenshots/` | Ảnh minh chứng |
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`02-nmap-udp-scan`](https://github.com/phanyen206/Suricata/tree/main/scenarios/02-nmap-udp-scan). Các tệp nhị phân như PCAP, ảnh chụp và tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
