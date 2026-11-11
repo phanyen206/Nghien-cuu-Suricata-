@@ -39,7 +39,7 @@ cat custom-rule.rules
 sudo suricata -T -c /etc/suricata/suricata.yaml -s custom-rule.rules
 ```
 
-![Luật riêng và kiểm tra cú pháp](01-luat-udp.png)
+![Luật riêng và kiểm tra cú pháp](https://raw.githubusercontent.com/phanyen206/Suricata/main/scenarios/12-udp-flood/01-luat-udp.png)
 
 *Hình 1. Nội dung luật UDP và kiểm tra cấu hình hợp lệ.*
 
@@ -71,7 +71,7 @@ tcpdump -nn -r sample_group.pcap 'udp and dst port 9999' 2>/dev/null | wc -l
 
 Kết quả đã ghi nhận: **100 gói UDP**, nguồn `192.168.100.10` đến đích `192.168.100.20:9999`.
 
-![100 gói UDP đến đúng địa chỉ](02-pcap-100-udp.png)
+![100 gói UDP đến đúng địa chỉ](https://raw.githubusercontent.com/phanyen206/Suricata/main/scenarios/12-udp-flood/02-pcap-100-udp.png)
 
 *Hình 2. Xác minh IP, cổng đích và số gói trong sample_group.pcap.*
 
@@ -100,11 +100,11 @@ tcpdump -nn -r normal_group_new.pcap 2>/dev/null | wc -l
 
 Kết quả đã ghi nhận: **5 gói UDP**, mỗi gói mang **15 byte** dữ liệu, cách nhau khoảng 1 giây.
 
-![Attacker gửi năm gói UDP](05-gui-5-udp.png)
+![Attacker gửi năm gói UDP](https://raw.githubusercontent.com/phanyen206/Suricata/main/scenarios/12-udp-flood/05-gui-5-udp.png)
 
 *Hình 3. Python gửi đủ 5/5 gói UDP bình thường.*
 
-![Victim đọc năm gói UDP](06-pcap-5-udp.png)
+![Victim đọc năm gói UDP](https://raw.githubusercontent.com/phanyen206/Suricata/main/scenarios/12-udp-flood/06-pcap-5-udp.png)
 
 *Hình 4. Xác minh năm gói UDP tại Victim.*
 
@@ -122,7 +122,7 @@ jq -s '[.[] | select(.event_type=="alert")] | length' run1_group/eve.json
 
 **Thực tế: đọc 100 gói, tổng 0 cảnh báo.**
 
-![Run 1](03-run1-et-open.png)
+![Run 1](https://raw.githubusercontent.com/phanyen206/Suricata/main/scenarios/12-udp-flood/03-run1-et-open.png)
 
 *Hình 5. Run 1 – kiểm thử 100 gói UDP với bộ luật cấu hình.*
 
@@ -136,7 +136,7 @@ jq -s '[.[] | select(.event_type=="alert" and .alert.signature_id==1000015)] | l
 
 **Thực tế: đọc 100 gói, 79 cảnh báo riêng SID 1000015.**
 
-![Run 2](04-run2-custom.png)
+![Run 2](https://raw.githubusercontent.com/phanyen206/Suricata/main/scenarios/12-udp-flood/04-run2-custom.png)
 
 *Hình 6. Run 2 – luật riêng phát sinh 79 cảnh báo.*
 
@@ -152,7 +152,7 @@ jq -s '[.[] | select(.event_type=="alert")] | length' run3_group_fixed/eve.json
 
 **Thực tế: đọc 5 gói, tổng 0 cảnh báo.**
 
-![Run 3](07-run3-et-open.png)
+![Run 3](https://raw.githubusercontent.com/phanyen206/Suricata/main/scenarios/12-udp-flood/07-run3-et-open.png)
 
 *Hình 7. Run 3 – 5 gói UDP bình thường, không có cảnh báo.*
 
@@ -166,7 +166,7 @@ jq -s '[.[] | select(.event_type=="alert" and .alert.signature_id==1000015)] | l
 
 **Thực tế: đọc 5 gói, 0 cảnh báo SID 1000015.**
 
-![Run 4](08-run4-custom.png)
+![Run 4](https://raw.githubusercontent.com/phanyen206/Suricata/main/scenarios/12-udp-flood/08-run4-custom.png)
 
 *Hình 8. Run 4 – luật riêng không cảnh báo trên 5 gói bình thường.*
 
