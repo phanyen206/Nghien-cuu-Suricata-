@@ -260,3 +260,8 @@ Nhiệm vụ KB07 đã hoàn thành các bước triển khai môi trường FTP
 Kết quả thực nghiệm cho thấy bộ luật ET Open trong lần kiểm thử chưa tạo ra cảnh báo chuyên biệt cho hành vi FTP Brute Force. Trong khi đó, luật tự xây dựng có SID `1000005` đã phát hiện được phản hồi đăng nhập FTP thất bại và ghi nhận cảnh báo trong hệ thống.
 
 Đây là cơ sở để đánh giá khả năng giám sát và phát hiện hành vi thử mật khẩu FTP bằng luật tự xây dựng trên Suricata.
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`07-ftp-bruteforce`](https://github.com/phanyen206/Suricata/tree/main/scenarios/07-ftp-bruteforce). Các tệp nhị phân như PCAP, ảnh chụp và tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
