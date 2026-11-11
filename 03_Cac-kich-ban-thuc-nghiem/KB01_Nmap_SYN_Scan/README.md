@@ -400,3 +400,8 @@ Run 2 đạt vì luật mới **phù hợp với hành vi mục tiêu**: bắt �
 
 ![Kiểm tra file bằng chứng](screenshots/13-evidence-files.png)
 *Hình 18. Số dòng các file trích sự kiện trước khi nộp.*
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`01-nmap-syn-scan`](https://github.com/phanyen206/Suricata/tree/main/scenarios/01-nmap-syn-scan). Các tệp nhị phân như PCAP, ảnh chụp và tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
