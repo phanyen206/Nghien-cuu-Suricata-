@@ -1,6 +1,6 @@
 > **Hướng dẫn người đọc:** README này mô tả mục tiêu, môi trường, thứ tự tái lập và cách kiểm tra kết quả. Hãy đọc phần môi trường và lệnh trước khi chạy script; cập nhật IP/interface theo lab của bạn. Chỉ chạy trong mạng ảo được phép.
 
-# KB05 – Phát hiện dò hệ điều hành, phiên bản dịch vụ và script NSE của nmap (nmap -O -sV --script)
+# KB03 – Phát hiện dò hệ điều hành, phiên bản dịch vụ và script NSE của nmap (nmap -O -sV --script)
 
 | Mục | Nội dung |
 |---|---|
@@ -340,3 +340,8 @@ Khác với KB01–KB04, ở KB05 ET Open đã làm được phần lớn công 
 | `benign-eve-excerpt-run2.json` | Run 2 trên lưu lượng bình thường, đã lọc checksum (223 dòng, đều là SID 2034636) |
 | `summary-run1.txt`, `summary-run2.txt` | Bảng tóm tắt cảnh báo |
 | `screenshots/` | Ảnh minh chứng |
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`05-nmap-nse-os-detect`](https://github.com/phanyen206/Suricata/tree/main/scenarios/05-nmap-nse-os-detect). Các tệp nhị phân như PCAP, ảnh chụp và tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
