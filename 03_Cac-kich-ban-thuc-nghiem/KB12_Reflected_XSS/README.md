@@ -260,3 +260,8 @@ sudo cat -n /etc/suricata/rules/local.rules
 ```
 
 Chỉ bổ sung số liệu và ảnh chụp sau khi lệnh đã chạy thực tế. Không dùng ảnh `run1` có cảnh báo checksum để kết luận đã phát hiện XSS.
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`14-reflected-xss`](https://github.com/phanyen206/Suricata/tree/main/scenarios/14-reflected-xss). Các tệp nhị phân như PCAP, ảnh chụp, gói minh chứng hoặc tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
