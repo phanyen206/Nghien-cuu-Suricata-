@@ -308,3 +308,8 @@ sudo jq -r 'select(.event_type=="alert") | [.alert.signature_id,.alert.signature
 **VICTIM .20 – bắt gói benign** và **ATTACKER .10 – gửi bốn lệnh curl bình thường**: xem đầy đủ mã tại mục 7. Ở cuối mục 7, chụp kết quả `0` của hai SID custom. Kết luận chỉ giới hạn trên 4 request đã dùng.
 
 **Lưu ý khi upload GitHub:** Ảnh đã chèn vào DOCX không tự xuất hiện trong README. Hãy upload `scenario13-evidence.png` cạnh `README.md`, hoặc tạo thư mục `images/` với ảnh PNG và đường dẫn Markdown tương ứng. Không bắt buộc ZIP. Dữ liệu trễ cảnh báo real-time vẫn *chưa đo*.
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`13-sql-injection`](https://github.com/phanyen206/Suricata/tree/main/scenarios/13-sql-injection). Các tệp nhị phân như PCAP, ảnh chụp, gói minh chứng hoặc tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
