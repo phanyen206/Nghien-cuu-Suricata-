@@ -227,3 +227,8 @@ jq -r 'select(.event_type=="alert") | [.alert.signature_id,.alert.signature] | @
 **Cách dùng:** Sau khi chuyển các script phù hợp lên từng máy và cấp quyền `chmod +x *.sh`, trên Victim chạy `./capture.sh syn`, trên Attacker chạy `./attack.sh`, dừng bắt gói; tương tự dùng `./http-server.sh`, `./capture.sh normal`, `./normal.sh`. Sau khi có hai PCAP chạy `./run-tests.sh` trên Victim. Khi chạy lại, kết quả có thể thay đổi; không khẳng định script đã được kiểm thử thay cho các lệnh Terminal gốc. Các ảnh/số liệu trên là từ lần thực nghiệm thực tế đã ghi nhận trong cuộc làm việc.
 
 **Lưu ý GitHub:** PCAP và log có thể lớn/chứa dữ liệu mạng, nên `.gitignore` bỏ qua chúng. Hai file PCAP mới được lưu trên Victim và không có sẵn trong gói ZIP này. Các ảnh PNG và README nằm cùng thư mục; liên kết ảnh không dùng tiền tố `images/`.
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`11-syn-flood`](https://github.com/phanyen206/Suricata/tree/main/scenarios/11-syn-flood). Các tệp nhị phân như PCAP, ảnh chụp, gói minh chứng hoặc tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
