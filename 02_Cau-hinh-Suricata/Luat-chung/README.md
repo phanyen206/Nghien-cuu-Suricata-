@@ -1,3 +1,10 @@
 # Luật Suricata dùng chung
 
-Chỉ đặt tại đây các luật thực sự dùng chung và đã được nhóm xác nhận. Luật riêng của từng KB đặt trong thư mục KB tương ứng. Chưa có luật nào được thêm khi tạo khung repository.
+Thư mục dành cho các luật được nhiều kịch bản cùng sử dụng. Hiện chưa có tệp luật chung được chuyển vào đây; các luật tùy chỉnh đang được lưu riêng theo từng KB.
+
+Khi cần kiểm tra luật, dùng:
+```bash
+sudo suricata -T -c /etc/suricata/suricata.yaml
+```
+
+Với từng KB, hãy đọc README của KB để biết chính xác file luật cần nạp và cách kết hợp với ET Open.
