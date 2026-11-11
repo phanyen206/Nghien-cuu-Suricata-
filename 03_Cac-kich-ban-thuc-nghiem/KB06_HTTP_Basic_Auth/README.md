@@ -1,11 +1,11 @@
 > **Hướng dẫn người đọc:** README này mô tả mục tiêu, môi trường, thứ tự tái lập và cách kiểm tra kết quả. Hãy đọc phần môi trường và lệnh trước khi chạy script; cập nhật IP/interface theo lab của bạn. Chỉ chạy trong mạng ảo được phép.
 
-# KB08 – HTTP BASIC AUTH BRUTE FORCE
+# KB06 – HTTP BASIC AUTH BRUTE FORCE
 
 ## 1. Thông tin nhiệm vụ
 
 - **Người phụ trách:** Uyên
-- **Tên kịch bản:** KB08 – HTTP Basic Auth Brute Force
+- **Tên kịch bản:** KB06 – HTTP Basic Auth Brute Force
 - **Nhóm tấn công:** Mật khẩu (Password)
 - **MITRE ATT&CK:** T1110.001 – Password Guessing
 - **Công cụ kiểm thử:** THC Hydra
@@ -14,7 +14,7 @@
 
 ## 2. Mục tiêu thực hiện
 
-Nhiệm vụ KB08 nhằm mô phỏng hành vi thử nhiều mật khẩu để đăng nhập vào tài nguyên được bảo vệ bằng HTTP Basic Authentication trên máy Victim, từ đó đánh giá khả năng phát hiện của hệ thống Suricata.
+Nhiệm vụ KB06 nhằm mô phỏng hành vi thử nhiều mật khẩu để đăng nhập vào tài nguyên được bảo vệ bằng HTTP Basic Authentication trên máy Victim, từ đó đánh giá khả năng phát hiện của hệ thống Suricata.
 
 Các mục tiêu cụ thể:
 
@@ -111,7 +111,7 @@ Kết quả trả về:
 
 ```text
 HTTP/1.1 401 Unauthorized
-WWW-Authenticate: Basic realm="KB08 Protected Area"
+WWW-Authenticate: Basic realm="KB06 Protected Area"
 ```
 
 Tiếp tục kiểm tra bằng tài khoản hợp lệ:
@@ -129,7 +129,7 @@ HTTP/1.1 200 OK
 Nội dung phản hồi:
 
 ```html
-<h1>KB08 - HTTP Basic Authentication</h1>
+<h1>KB06 - HTTP Basic Authentication</h1>
 <p>Authentication successful!</p>
 ```
 
@@ -170,7 +170,7 @@ Nội dung lệnh kiểm thử:
 ```bash
 #!/bin/bash
 
-# KB08 - HTTP Basic Auth Brute Force
+# KB06 - HTTP Basic Auth Brute Force
 
 VICTIM="192.168.190.130"
 
@@ -302,7 +302,7 @@ Giải thích luật:
 - `sid:1000014`: Mã định danh của luật.
 - `rev:1`: Phiên bản luật.
 
-Lưu ý: Ngưỡng 5 lần trong 60 giây là ngưỡng đã sử dụng trong thực nghiệm KB08. Ngưỡng chính thức cuối cùng vẫn cần được thống nhất với nhóm.
+Lưu ý: Ngưỡng 5 lần trong 60 giây là ngưỡng đã sử dụng trong thực nghiệm KB06. Ngưỡng chính thức cuối cùng vẫn cần được thống nhất với nhóm.
 
 Kiểm tra cấu hình Suricata:
 
@@ -494,7 +494,7 @@ Tỷ lệ cảnh báo sai quan sát được đối với custom rule trong mẫ
 
 ## 6. Kết luận
 
-Nhiệm vụ KB08 đã hoàn thành các bước triển khai môi trường HTTP Basic Authentication, mô phỏng hành vi HTTP Basic Auth Brute Force bằng Hydra và xây dựng luật phát hiện trên Suricata.
+Nhiệm vụ KB06 đã hoàn thành các bước triển khai môi trường HTTP Basic Authentication, mô phỏng hành vi HTTP Basic Auth Brute Force bằng Hydra và xây dựng luật phát hiện trên Suricata.
 
 Kết quả thực nghiệm cho thấy bộ luật ET Open đã phát hiện dấu hiệu sử dụng Hydra thông qua User-Agent nhưng chưa có cảnh báo chuyên biệt cho nhiều lần xác thực HTTP Basic Authentication thất bại.
 
@@ -502,7 +502,7 @@ Trong Run 2, luật tự xây dựng SID `1000014` đã phát hiện được c�
 
 Độ trễ phát hiện ước tính trong lượt thử nghiệm là khoảng 0,102 giây. Khi kiểm tra bằng 10 request đăng nhập hợp lệ, luật tự xây dựng không phát sinh thêm cảnh báo.
 
-Như vậy, KB08 đã hoàn thành phần triển khai và kiểm thử kỹ thuật trong môi trường lab. Ngưỡng threshold cuối cùng vẫn cần được thống nhất với nhóm trước khi chốt cấu hình chính thức.
+Như vậy, KB06 đã hoàn thành phần triển khai và kiểm thử kỹ thuật trong môi trường lab. Ngưỡng threshold cuối cùng vẫn cần được thống nhất với nhóm trước khi chốt cấu hình chính thức.
 
 
 ## Tệp nguồn và minh chứng gốc
