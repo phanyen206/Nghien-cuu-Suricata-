@@ -328,3 +328,8 @@ grep -c '"signature_id":1000006' run4_group/eve.json
 ## 9. Kết luận
 
 Kịch bản 10 đã được kiểm thử lại theo mô hình mạng Host-only thống nhất của nhóm: **Attacker `192.168.100.10` → Victim `192.168.100.20`**. Trên mẫu ICMP tần suất cao 100 gói, bộ luật đối chứng không phát sinh cảnh báo, trong khi luật riêng `SID 1000006`, `rev:2` tạo 73 cảnh báo. Trên mẫu ping thông thường 5 gói, luật riêng không phát sinh cảnh báo. Kết quả cho thấy luật tùy chỉnh đáp ứng mục tiêu của bài thực hành trong phạm vi hai mẫu dữ liệu và là cơ sở cho việc nghiên cứu, hiệu chỉnh ngưỡng phát hiện sau này.
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`10-icmp-flood`](https://github.com/phanyen206/Suricata/tree/main/scenarios/10-icmp-flood). Các tệp nhị phân như PCAP, ảnh chụp, gói minh chứng hoặc tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
