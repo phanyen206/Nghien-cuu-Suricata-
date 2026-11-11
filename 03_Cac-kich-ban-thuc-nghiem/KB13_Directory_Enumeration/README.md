@@ -177,7 +177,7 @@ sudo suricata -r sample.pcap -c /etc/suricata/suricata.yaml -S /var/lib/suricata
 
 ## 4. Nội dung luật tùy chỉnh
 ```suricata
-alert http any any -> 192.168.100.3 80 (msg:"KB15 Directory Brute Force Detected"; flow:established,to_server; http.method; content:"GET"; threshold:type threshold, track by_src, count 10, seconds 30; classtype:attempted-recon; sid:1000009; rev:1;) 
+alert http any any -> 192.168.100.3 80 (msg:"KB13 Directory Brute Force Detected"; flow:established,to_server; http.method; content:"GET"; threshold:type threshold, track by_src, count 10, seconds 30; classtype:attempted-recon; sid:1000009; rev:1;) 
 ```
 `http.method; content:"GET"` khớp phương thức GET, `flow:established,to_server` giới hạn chiều truy cập, `threshold:type threshold, track by_src, count 10, seconds 30` giới hạn tần suất cảnh báo theo nguồn. Luật nhận diện GET dày đặc chứ không trực tiếp xác minh URI khác nhau; có thể báo sai với ứng dụng gửi nhiều GET hợp lệ.
 
