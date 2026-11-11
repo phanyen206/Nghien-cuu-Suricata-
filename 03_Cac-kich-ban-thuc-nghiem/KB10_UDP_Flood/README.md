@@ -198,3 +198,8 @@ Các file nằm **cùng cấp với README.md** và ảnh PNG, không cần thư
 
 **PCAP gốc không có trong gói ZIP** vì nằm trên máy Victim. Để lưu PCAP minh chứng, có thể copy chúng từ Victim vào repo sau khi xem xét dung lượng và quy định nhóm; nếu muốn Git theo dõi PCAP, điều chỉnh `.gitignore`.
 
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`12-udp-flood`](https://github.com/phanyen206/Suricata/tree/main/scenarios/12-udp-flood). Các tệp nhị phân như PCAP, ảnh chụp, gói minh chứng hoặc tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
