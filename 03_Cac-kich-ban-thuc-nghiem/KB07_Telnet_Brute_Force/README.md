@@ -464,3 +464,8 @@ Khi kiểm tra bằng một phiên đăng nhập hợp lệ, luật tự xây d�
 Tuy nhiên, độ trễ phát hiện chưa thể xác định chính xác do timestamp giữa PCAP và EVE chưa khớp. Đây là hạn chế cần được kiểm tra bổ sung nếu yêu cầu đánh giá latency chính thức.
 
 Như vậy, KB09 đã hoàn thành phần triển khai và kiểm thử phát hiện cơ bản trong môi trường lab, đồng thời đã lưu trữ PCAP, log và luật tự xây dựng để phục vụ việc kiểm tra, đánh giá và báo cáo.
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`09-telnet-bruteforce`](https://github.com/phanyen206/Suricata/tree/main/scenarios/09-telnet-bruteforce). Các tệp nhị phân như PCAP, ảnh chụp, gói minh chứng hoặc tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
