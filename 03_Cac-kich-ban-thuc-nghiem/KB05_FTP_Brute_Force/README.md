@@ -1,13 +1,13 @@
 > **Hướng dẫn người đọc:** README này mô tả mục tiêu, môi trường, thứ tự tái lập và cách kiểm tra kết quả. Hãy đọc phần môi trường và lệnh trước khi chạy script; cập nhật IP/interface theo lab của bạn. Chỉ chạy trong mạng ảo được phép.
 
-# BÁO CÁO KẾT QUẢ THỰC HIỆN NHIỆM VỤ KB07
+# BÁO CÁO KẾT QUẢ THỰC HIỆN NHIỆM VỤ KB05
 
 ## Kiểm thử FTP Brute Force và cấu hình Suricata phát hiện
 
 ### 1. Thông tin nhiệm vụ
 
 - **Người thực hiện:** Uyên
-- **Tên kịch bản:** KB07 – FTP Brute Force
+- **Tên kịch bản:** KB05 – FTP Brute Force
 - **Nhóm tấn công:** Mật khẩu (Password)
 - **MITRE ATT&CK:** T1110.001 – Password Guessing
 - **Công cụ kiểm thử:** THC Hydra
@@ -16,7 +16,7 @@
 
 ### 2. Mục tiêu thực hiện
 
-Nhiệm vụ KB07 nhằm mô phỏng hành vi thử nhiều mật khẩu để đăng nhập vào dịch vụ FTP trên máy Victim, từ đó kiểm tra khả năng phát hiện của hệ thống Suricata.
+Nhiệm vụ KB05 nhằm mô phỏng hành vi thử nhiều mật khẩu để đăng nhập vào dịch vụ FTP trên máy Victim, từ đó kiểm tra khả năng phát hiện của hệ thống Suricata.
 
 Các mục tiêu cụ thể:
 
@@ -255,7 +255,7 @@ Cần lưu ý rằng ngưỡng `count 1, seconds 60` hiện là ngưỡng thử 
 
 ### 7. Kết luận
 
-Nhiệm vụ KB07 đã hoàn thành các bước triển khai môi trường FTP, kiểm tra dịch vụ, mô phỏng hành vi FTP Brute Force và xây dựng luật phát hiện trên Suricata.
+Nhiệm vụ KB05 đã hoàn thành các bước triển khai môi trường FTP, kiểm tra dịch vụ, mô phỏng hành vi FTP Brute Force và xây dựng luật phát hiện trên Suricata.
 
 Kết quả thực nghiệm cho thấy bộ luật ET Open trong lần kiểm thử chưa tạo ra cảnh báo chuyên biệt cho hành vi FTP Brute Force. Trong khi đó, luật tự xây dựng có SID `1000005` đã phát hiện được phản hồi đăng nhập FTP thất bại và ghi nhận cảnh báo trong hệ thống.
 
