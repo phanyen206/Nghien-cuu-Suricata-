@@ -213,3 +213,8 @@ Không đưa các log hoặc file PCAP lên GitHub nếu chúng chứa thông ti
 
 ## 8. Kết luận
 Quá trình quét, bắt PCAP, Run 1 và Run 2 đã hoàn thành. Rule SID 1000009 kích hoạt 461 lần trên PCAP thử nghiệm. Để đáp ứng đầy đủ tài liệu gốc, cần hoàn thiện thử nghiệm benign, ghi số false positive và (nếu yêu cầu) độ trễ phát hiện, sau đó bổ sung ảnh thực tế.
+
+
+## Tệp nguồn và minh chứng gốc
+
+Thư mục nguồn trong repository ban đầu: [`15-dir-bruteforce`](https://github.com/phanyen206/Suricata/tree/main/scenarios/15-dir-bruteforce). Các tệp nhị phân như PCAP, ảnh chụp, gói minh chứng hoặc tài liệu DOCX (nếu có) hiện vẫn được giữ tại repository nguồn; README này liên kết về nguồn để người đọc tải/xem, không thay thế bằng dữ liệu giả.
