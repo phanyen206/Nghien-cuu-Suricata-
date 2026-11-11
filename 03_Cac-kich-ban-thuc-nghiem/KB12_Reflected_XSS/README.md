@@ -247,7 +247,7 @@ scenarios/14-reflected-xss/
     └── run2-combined-fast.log
 ```
 
-Ảnh có thể chụp bằng công cụ Screenshot của Ubuntu hoặc screenshot VirtualBox. Đặt đúng tên và lưu vào `evidence/`, rồi thêm vào README cú pháp `![Mô tả](evidence/08-run2-alert.png)`. Không đưa ảnh minh họa không phải kết quả thực tế.
+Ảnh có thể chụp bằng công cụ Screenshot của Ubuntu hoặc screenshot VirtualBox. Đặt đúng tên và lưu vào `evidence/`, rồi thêm vào README cú pháp `![Mô tả](https://raw.githubusercontent.com/phanyen206/Suricata/main/scenarios/14-reflected-xss/evidence/08-run2-alert.png)`. Không đưa ảnh minh họa không phải kết quả thực tế.
 
 ## 14. Lệnh tổng hợp bằng chứng trước khi nộp
 
