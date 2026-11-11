@@ -1,12 +1,12 @@
 > **Hướng dẫn người đọc:** README này mô tả mục tiêu, môi trường, thứ tự tái lập và cách kiểm tra kết quả. Hãy đọc phần môi trường và lệnh trước khi chạy script; cập nhật IP/interface theo lab của bạn. Chỉ chạy trong mạng ảo được phép.
 
-# BÁO CÁO KẾT QUẢ THỰC HIỆN NHIỆM VỤ KB06
+# BÁO CÁO KẾT QUẢ THỰC HIỆN NHIỆM VỤ KB04
 ## Kiểm thử SSH Brute Force và cấu hình Suricata phát hiện
 
 ### 1. Thông tin nhiệm vụ
 
 - **Người thực hiện:** Uyên
-- **Tên kịch bản:** KB06 – SSH Brute Force
+- **Tên kịch bản:** KB04 – SSH Brute Force
 - **Nhóm tấn công:** Mật khẩu (Password)
 - **MITRE ATT&CK:** T1110.001 – Password Guessing
 - **Công cụ kiểm thử:** THC Hydra
@@ -15,7 +15,7 @@
 
 ### 2. Mục tiêu thực hiện
 
-Nhiệm vụ KB06 nhằm mô phỏng hành vi thử nhiều mật khẩu để đăng nhập vào dịch vụ SSH trên máy Victim, từ đó kiểm tra khả năng phát hiện của hệ thống Suricata.
+Nhiệm vụ KB04 nhằm mô phỏng hành vi thử nhiều mật khẩu để đăng nhập vào dịch vụ SSH trên máy Victim, từ đó kiểm tra khả năng phát hiện của hệ thống Suricata.
 
 Các mục tiêu cụ thể:
 
@@ -283,11 +283,11 @@ Như vậy, phần kiểm thử đã chứng minh được khả năng phát hi�
 
 ### 6. Kết luận
 
-Nhiệm vụ KB06 đã hoàn thành phần triển khai môi trường, kiểm tra dịch vụ SSH, mô phỏng hành vi đoán mật khẩu và xây dựng luật phát hiện trên Suricata.
+Nhiệm vụ KB04 đã hoàn thành phần triển khai môi trường, kiểm tra dịch vụ SSH, mô phỏng hành vi đoán mật khẩu và xây dựng luật phát hiện trên Suricata.
 
 Kết quả thực nghiệm cho thấy Suricata có thể phát hiện và ghi nhận các kết nối SSH lặp lại từ máy Attacker đến máy Victim thông qua luật tự xây dựng có SID `1000004`.
 
-Mặc dù Hydra chưa tìm được mật khẩu hợp lệ trong wordlist đã sử dụng, hệ thống vẫn ghi nhận được cảnh báo tương ứng với hành vi kết nối SSH lặp lại. Đây là cơ sở để đánh giá khả năng giám sát và phát hiện của Suricata trong kịch bản KB06.
+Mặc dù Hydra chưa tìm được mật khẩu hợp lệ trong wordlist đã sử dụng, hệ thống vẫn ghi nhận được cảnh báo tương ứng với hành vi kết nối SSH lặp lại. Đây là cơ sở để đánh giá khả năng giám sát và phát hiện của Suricata trong kịch bản KB04.
 
 
 ## Tệp nguồn và minh chứng gốc
